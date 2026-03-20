@@ -1,0 +1,21 @@
+{
+  "name": "cypress-bookapp",
+  "version": "1.0.0",
+  "description": "Cypress tests for BookApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:headed": "cypress run --headed",
+    "test:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
+    "test:laptop": "cypress run --config viewportWidth=1366,viewportHeight=768"
+  },
+  "author": "Olga Zotova",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
+
+
