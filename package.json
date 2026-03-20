@@ -8,8 +8,10 @@
     "cy:open": "cypress open",
     "cy:run:chrome": "cypress run --browser chrome",
     "cy:run:headed": "cypress run --headed",
-    "test:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
-    "test:laptop": "cypress run --config viewportWidth=1366,viewportHeight=768"
+    "test:mobile": "cypress open --config-file cypress.mobile.config.js",
+    "test:laptop": "cypress open --config-file cypress.laptop.config.js",
+    "test:mobile:run": "cypress run --config-file cypress.mobile.config.js --headed",
+    "test:laptop:run": "cypress run --config-file cypress.laptop.config.js --headed"
   },
   "author": "Olga Zotova",
   "license": "ISC",
@@ -17,5 +19,6 @@
     "cypress": "^13.6.0"
   }
 }
+
 
 
