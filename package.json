@@ -6,12 +6,16 @@
   "scripts": {
     "test": "cypress run",
     "cy:open": "cypress open",
-    "cy:run:chrome": "cypress run --browser chrome",
-    "cy:run:headed": "cypress run --headed",
-    "test:mobile": "cypress open --config-file cypress.mobile.config.js",
-    "test:laptop": "cypress open --config-file cypress.laptop.config.js",
-    "test:mobile:run": "cypress run --config-file cypress.mobile.config.js --headed",
-    "test:laptop:run": "cypress run --config-file cypress.laptop.config.js --headed"
+
+    "mobile:chrome:headed": "cypress run --config-file cypress.mobile.config.js --browser chrome --headed",
+    "mobile:chrome:headless": "cypress run --config-file cypress.mobile.config.js --browser chrome",
+    "mobile:edge:headed": "cypress run --config-file cypress.mobile.config.js --browser edge --headed",
+    "mobile:edge:headless": "cypress run --config-file cypress.mobile.config.js --browser edge",
+
+    "laptop:chrome:headed": "cypress run --config-file cypress.laptop.config.js --browser chrome --headed",
+    "laptop:chrome:headless": "cypress run --config-file cypress.laptop.config.js --browser chrome",
+    "laptop:edge:headed": "cypress run --config-file cypress.laptop.config.js --browser edge --headed",
+    "laptop:edge:headless": "cypress run --config-file cypress.laptop.config.js --browser edge"
   },
   "author": "Olga Zotova",
   "license": "ISC",
@@ -19,6 +23,7 @@
     "cypress": "^13.6.0"
   }
 }
+
 
 
 
